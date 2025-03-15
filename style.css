@@ -314,19 +314,20 @@ a:hover {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .savings-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0 1em 0;
 }
 
 .savings-item {
   text-align: center;
   padding: 1rem;
-  background: #f9f9f9;
+  background: #d4ffe7;
   border-radius: 8px;
 }
 
@@ -348,9 +349,9 @@ a:hover {
 .health-milestone {
   padding: 1rem;
   margin-bottom: 1rem;
-  background: #f9f9f9;
+  background: #a9ffb8;
   border-radius: 8px;
-  border-left: 4px solid #3498db;
+  border-left: 4px solid #27ae60;
 }
 
 .health-milestone h3 {
