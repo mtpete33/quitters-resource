@@ -260,6 +260,104 @@ a:hover {
   background: #27ae60;
 }
 
+/* Calculator Section */
+.calculator-section {
+  padding: 2rem 0;
+}
+
+.calculator-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.calculate-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.calculate-btn:hover {
+  background: #27ae60;
+}
+
+.results-section {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.savings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.savings-item {
+  text-align: center;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.savings-item h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.money {
+  font-size: 1.5rem;
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.health-timeline {
+  margin-top: 2rem;
+}
+
+.health-milestone {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.health-milestone h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
 /* Footer */
 .footer {
   text-align: center;

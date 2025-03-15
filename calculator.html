@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Articles</title>
+  <title>Quit Calculator</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -25,44 +27,67 @@
         <a href="books.html">Books</a>
         <a href="podcasts.html">Podcasts</a>
         <a href="#testimonials">Testimonials</a>
-        <!-- <a href="additionalresources.html">Additional Resources</a> -->
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <header class="hero-non-index">
-    <h1>Articles</h1>
-    <p>Articles that will help inspire you to start quitting or to stay quit.</p>
+    <h1>Quit Calculator</h1>
+    <p>See how much you can save and the health benefits you'll gain by quitting.</p>
   </header>
 
-
-  <!-- Featured Article -->
-  <section class="featured container">
-    <h2>Featured Article: The Benefits of Going Cold Turkey</h2>
-    <p>Quitting nicotine cold turkey can be challenging, but the rewards are immense. Learn how to tackle cravings and make the most of your quit journey.</p>
-    <a id="articlesFeatured" href="articles/benefits-of-going-cold-turkey.html">Read Article</a>
-  </section>
-
-  <!-- Cards Section -->
-  <section class="container cards">
-    <div class="card">
-      <h3>Nostalgia</h3>
-      <p>A stream of conciousness article about grieving the loss of smoking and learning to move forward.</p>
-      <a href="articles/nostalgia.html">Read Article</a>
+  <!-- Calculator Section -->
+  <section class="calculator-section container">
+    <div class="calculator-form">
+      <div class="input-group">
+        <label for="cigarettesPerDay">Cigarettes per day:</label>
+        <input type="number" id="cigarettesPerDay" min="1" max="100" value="20">
+      </div>
+      <div class="input-group">
+        <label for="packCost">Cost per pack ($):</label>
+        <input type="number" id="packCost" min="1" step="0.01" value="8.00">
+      </div>
+      <div class="input-group">
+        <label for="quitDate">Quit date:</label>
+        <input type="date" id="quitDate">
+      </div>
+      <button id="calculateBtn" class="calculate-btn">Calculate Benefits</button>
     </div>
 
-    <div class="card">
-      <h3>Submit An Article</h3>
-        <p>Do you want to share your quit story with others to help and inspire them? Submit an article here and we may feature it on the website!</p>
-        <a href="#">Submit An Article</a>
+    <div id="results" class="results-section" style="display: none;">
+      <h2>Your Savings</h2>
+      <div class="savings-grid">
+        <div class="savings-item">
+          <h3>1 Month</h3>
+          <p class="money">$<span id="savings1Month">0</span></p>
+        </div>
+        <div class="savings-item">
+          <h3>3 Months</h3>
+          <p class="money">$<span id="savings3Months">0</span></p>
+        </div>
+        <div class="savings-item">
+          <h3>6 Months</h3>
+          <p class="money">$<span id="savings6Months">0</span></p>
+        </div>
+        <div class="savings-item">
+          <h3>1 Year</h3>
+          <p class="money">$<span id="savings1Year">0</span></p>
+        </div>
+        <div class="savings-item">
+          <h3>5 Years</h3>
+          <p class="money">$<span id="savings5Years">0</span></p>
+        </div>
+        <div class="savings-item">
+          <h3>15 Years</h3>
+          <p class="money">$<span id="savings15Years">0</span></p>
+        </div>
       </div>
 
-    <!-- <div class="card">
-      <h3>Article</h3>
-        <p>Article description...</p>
-        <a href="#">Read Article</a>
-      </div> -->
+      <h2>Health Timeline</h2>
+      <div id="healthBenefits" class="health-timeline">
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -71,5 +96,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="calculator.js"></script>
 </body>
 </html>
