@@ -71,6 +71,9 @@ a:hover {
   background-color: white;
   transition: all 0.3s ease;
 }
+.active {
+  color: #f1c40f !important;
+}
 
 @media (max-width: 900px) {
   .hamburger {
@@ -86,6 +89,7 @@ a:hover {
     background: linear-gradient(45deg, #3498db, #2ecc71);
     padding: 20px;
     text-align: center;
+    z-index: 1;
   }
 
   .nav-links.active {
@@ -111,26 +115,54 @@ a:hover {
 
   .hamburger.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+
   }
+}
+
+.page-header {
+  text-align: center;
+  color: black;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
   padding: 5rem 1rem;
-  background: linear-gradient(45deg, #2ecc71, #1abc9c);
+  /* background: linear-gradient(45deg, #2ecc71, #1abc9c); */
+  background-image: url(images/quit_smoking.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
   color: #fff;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 11%, 100% 0, 100% 79%, 0 100%);
+}
+.hero-non-index {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: linear-gradient(45deg, #2ecc71, #1abc9c);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 25vh;
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 .hero p {
   font-size: 1.5rem;
   margin-top: 1.5rem;
+}
+
+#index-intro {
+  margin: 10px auto;
+  width: 600px;
+  
 }
 
 /* Featured Article */
@@ -164,17 +196,27 @@ a:hover {
   text-transform: uppercase;
   transition: background 0.3s;
 }
-
-.featured a:hover {
-  background: #2980b9;
+#bookimage {
+  display: block;
+  margin: 0 auto;
 }
+/* #indexFeatured, #articlesFeatured {
+  background: #3498db;
+}
+#indexFeatured:hover, #articlesFeatured:hover {
+  background: #2a6c98;
+} */
+
+/* .featured a:hover {
+  background: #62addf;
+} */
 
 /* Cards Section */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
-  margin: 3rem 0;
+  margin: 3rem auto;
 }
 
 .card {
