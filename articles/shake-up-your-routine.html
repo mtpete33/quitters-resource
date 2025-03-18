@@ -1,113 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shake Up Your Routine</title>
+  <title>Shake Up Your Routine | Quitter's Resource</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #fdfdfd;
-      padding: 1rem;
-    }
-
-    a {
-      color: #3498db;
-      transition: color 0.3s;
-    }
-
-    a:hover {
-      color: #2980b9;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #2ecc71;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #555;
-      margin-top: 0.5rem;
-    }
-
-    article {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    article h2 {
-      font-size: 2rem;
-      color: #333;
-      margin-bottom: 1rem;
-    }
-
-    article p {
-      font-size: 1rem;
-      color: #555;
-      margin: 1rem 0;
-    }
-
-    article ul {
-      margin: 1rem 0;
-      padding-left: 1.5rem;
-    }
-
-    article ul li {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-    }
-
-    footer a {
-      color: #3498db;
-      text-decoration: underline;
-    }
-
-    footer a:hover {
-      color: #2980b9;
-    }
-  </style>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Shake Up Your Routine</h1>
-      <p>Break free from smoking habits for good.</p>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html"><h1>Quitter's Resource</h1></a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../articles.html" class="active">Articles</a>
+        <a href="../#forum">Forum</a>
+        <a href="../calculator.html">Calculator</a>
+        <a href="../books.html">Books</a>
+        <a href="../podcasts.html">Podcasts</a>
+        <a href="../#testimonials">Testimonials</a>
+      </div>
+    </div>
+  </nav>
 
-    <article>
+  <header class="hero-non-index">
+    <h1>Shake Up Your Routine</h1>
+    <p>Break free from smoking habits for good.</p>
+  </header>
+
+  <div class="container">
+    <article style="margin: 2rem auto;">
       <h2>A Fresh Start</h2>
       <p>Quitting smoking isn't just about resisting nicotine—it's about <strong>rewiring your daily habits</strong>. Smoking is often tied to routines: that morning cigarette with coffee, the break-time smoke at work, or the habit of lighting up after meals. These small moments can be <strong>triggers</strong> that pull you back in, but the key to long-term success is to <strong>shake things up and create new patterns</strong> that work for you instead of against you.</p>
 
@@ -147,14 +75,16 @@
       <p>Quitting smoking isn't about <strong>losing</strong> something—it's about <strong>gaining freedom</strong>. Every time you shake up your routine, you're rewiring your brain and taking another step toward a healthier, stronger version of yourself.</p>
 
       <p>Change isn't always easy, but it <strong>starts with small shifts</strong>—and those small shifts lead to a <strong>smoke-free, empowered future</strong>. Keep going. You've got this.</p>
-      
-      <br>
-      <a href="../articles.html">Back to Articles</a>
-    </article>
 
-    <footer>
-      <p>&copy; 2025 Quitter's Resource | <a href="../index.html">Homepage</a></p>
-    </footer>
+      <a href="../articles.html" class="card">Back to Articles</a>
+    </article>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Quitter's Resource | <a href="../index.html">Homepage</a></p>
+  </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>
