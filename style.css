@@ -26,6 +26,7 @@ a:hover {
   /* width: 100%; */
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Navbar */
@@ -218,6 +219,21 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   transition: background 0.3s;
+}
+
+#backBtn {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    text-align: center;
+    color: white;
+    background-color: #3498db;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+#backBtn:hover {
+    background-color: #2980b9;
+    color: #ffff70;
 }
 #bookimage {
   display: block;
